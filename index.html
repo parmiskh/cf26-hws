@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  
+    <div class="shadow-md rounded-lg mx-8 my-4 overflow-x-hidden">
+        <table id="dataTable" class="w-full text-sm text-left text-gray-400">
+            <thead class="w-full text-xs bg-gray-700 text-gray-400 uppercase">
+                <tr>
+                    <th class="px-6 py-3">#</th>
+                    <th class="px-6 py-3">lastName</th>
+                    <th class="px-6 py-3">firstName</th>
+                    <th class="px-6 py-3">date</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <tr>
+                        <th class="px-6 py-4"></th>
+                        <th class="px-6 py-4"><input class="text-lg text-black p-1" type="text" id="lastName"></th>
+                        <th class="px-6 py-4"><input class="text-lg text-black p-1" type="text" id="firstName"></th>
+                        <th class="px-6 py-4"><input class="text-lg text-black p-1" type="text" id="date" placeholder="۱۲۳۴-۵۶-۶۷"></th>
+                        <th class="px-6 py-4"><button class="bg-green-700 text-white font-medium text-base px-5 py-2.5 rounded-lg hover:bg-purple-500" onclick="addRow()">ثبت</button></th>
+                    </tr>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b border-gray-600 odd:bg-gray-800 even:bg-gray-700">
+                    <td class="px-6 py-3">#</td>
+                    <td class="px-6 py-3">reza</td>
+                    <td class="px-6 py-3">yazdani</td>
+                    <td class="px-6 py-3">2023-02-02</td>
+                    <td></td>
+                </tr>
+                <tr class="border-b border-gray-600 odd:bg-gray-800 even:bg-gray-700">
+                    <td class="px-6 py-3">#</td>
+                    <td class="px-6 py-3">ali</td>
+                    <td class="px-6 py-3">nili</td>
+                    <td class="px-6 py-3">2024-01-01</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
